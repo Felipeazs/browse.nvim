@@ -55,7 +55,9 @@ end
 
 -- a generic searching function used everywhere
 M.search = function(target_fn)
+    print("SEARCHING...")
   vim.ui.input("Search String: ", function(input)
+    print("SEARCHING...")
     if input == nil or input == "" then
       return
     end
